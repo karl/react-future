@@ -1,3 +1,5 @@
+import "babel-polyfill";
+
 /**
  * This is an experimental prototype of an integrated React layout algorithm
  * defined in terms of Effects implemented as ECMAScript generators.
@@ -209,7 +211,7 @@ function* VerticalFlex(props, ...flexItems) {
 function Reflexity(child1, child2) {
   return $(VerticalFlex, { height: 300 },
     { item: child1 },
-    { item: $(Div, { background: '#f00' }, $(Text, 'Some stuff '), $(Text, 'in between!')) },
+    { item: $(Div, { background: '#f00' }, $(Text, 'Some stuff '), $(Text, 'in between asf ldskfj lsdkfj lsdkfj lsdjfl sdf !')) },
     { item: $(FlexibleBox, { background: '#00f' }), flex: 1 },
     { item: child2 },
     { item: $(FlexibleBox, { background: '#0f0' }), flex: 0.5 }
